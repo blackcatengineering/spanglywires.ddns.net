@@ -27,7 +27,7 @@ variable "external_network" {
 
 variable "cluster_template" {
   type    = string
-  default = "generic-k8s-v1.31.1-capi-capi-template"
+  default = "generic-k8s-v1.31.1-capi-template"
 }
 
 variable "harness_account_id" {
