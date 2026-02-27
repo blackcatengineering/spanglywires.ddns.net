@@ -1,0 +1,15 @@
+module "builder-infra" {
+  source                 = "git@github.com:blackcatengineering/tf-mod-builder_infra"
+  domain                 = "${var.domain}"
+  enable_istio           = false
+  enable_istio_ambient   = false
+  enable_jenkins         = false
+  enable_ip_masq         = false
+  enable_harness         = false
+  enable_cert_manager    = false
+  enable_trust_manager   = false
+  enable_jaeger          = false
+  harness_account_id     = var.harness_account_id
+  harness_delegate_token = var.harness_delegate_token
+  k8s_template           = "${var.cluster_template}"
+}
