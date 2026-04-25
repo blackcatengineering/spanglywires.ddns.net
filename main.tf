@@ -1,5 +1,6 @@
 module "builder-infra" {
-  source                 = "git@github.com:blackcatengineering/terraform-module-builder_infra"
+  source                 = "git@github.com:blackcatengineering/terraform-module-builder-infra"
+  version                = "1.0.0"
   domain                 = "${var.domain}"
   enable_istio           = false
   enable_istio_ambient   = false
