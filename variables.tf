@@ -27,7 +27,7 @@ variable "external_network" {
 
 variable "cluster_template" {
   type    = string
-  default = "generic-k8s-v1.32.8-template"
+  default = "generic-k8s-v1.36.0-template"
 }
 
 variable "harness_account_id" {
